@@ -119,21 +119,21 @@ class Subscriber {
 public class Main {
     public static void main(String[] args) {
         // Creating companies
-        Company company1 = new Company("Company 1");
-        Company company2 = new Company("Company 2");
+        Company company1 = new Company("Beeline");
+        Company company2 = new Company("Kazaktelekom");
 
         // Creating tariffs
-        Tariff tariff1 = new Tariff("Tariff 1", company1);
-        Tariff tariff2 = new Tariff("Tariff 2", company2);
+        Tariff tariff1 = new Tariff("Unlim", company1);
+        Tariff tariff2 = new Tariff("All for 3490", company2);
 
         // Adding tariffs to companies
         company1.addTariff(tariff1);
         company2.addTariff(tariff2);
 
         // Creating subscribers
-        Subscriber subscriber1 = new Subscriber("Subscriber 1", "123456789", 50.0, tariff1);
-        Subscriber subscriber2 = new Subscriber("Subscriber 2", "987654321", 30.0, tariff1);
-        Subscriber subscriber3 = new Subscriber("Subscriber 3", "555555555", 20.0, tariff2);
+        Subscriber subscriber1 = new Subscriber("Kamila", "87771234873", 50.0, tariff1);
+        Subscriber subscriber2 = new Subscriber("Islam", "87012123847", 30.0, tariff1);
+        Subscriber subscriber3 = new Subscriber("Dariya", "87001234578", 20.0, tariff2);
 
         // Adding subscribers to tariffs
         tariff1.addSubscriber(subscriber1);
